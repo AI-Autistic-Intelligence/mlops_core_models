@@ -1,7 +1,7 @@
-import torch
 import torch.nn as nn
+from .base import BaseForecaster
 
-class LSTMMarketPredictor(nn.Module):
+class LSTMMarketPredictor(BaseForecaster):
     """
     LSTM-based time-series forecasting model.
     Takes a sequence of historical prices/volumes and predicts the next price step.
